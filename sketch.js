@@ -48,6 +48,8 @@ function draw() {
   //add styles here
   textSize(25);
   text("Press UP Arrow key to Feed the Dog", 200, 50);
+  textSize(17);
+  text("Food Remaning: "+foodS, 250, 150);
 }
 
 function readStock(data)
@@ -61,7 +63,7 @@ function writeStock(x)
 
   if(x<=0)
   {
-    x=0;
+    x=20;
   }
   else
   {
